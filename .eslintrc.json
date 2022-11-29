@@ -8,6 +8,7 @@
   ],
   "rules":  {
     "react/jsx-filename-extension": [2, { "extensions": [".jsx", ".tsx"] }],
-    "import/extensions": [".js", ".jsx", ".ts", ".tsx"]
+    "react/jsx-props-no-spreading": [0],
+    "import/extensions": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"], "json": "always" }]
   }
 }

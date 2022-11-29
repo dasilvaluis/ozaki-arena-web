@@ -1,0 +1,24 @@
+{
+  "entries": [
+    {
+      "label": "Satiul",
+      "path": "/space"
+    },
+    {
+      "label": "Activități",
+      "path": "/activities"
+    },
+    {
+      "label": "Preturi",
+      "path": "/prices"
+    },
+    {
+      "label": "Locație",
+      "path": "/location"
+    },
+    {
+      "label": "Leaderboard",
+      "path": "/leaderboard"
+    }
+  ]
+}
