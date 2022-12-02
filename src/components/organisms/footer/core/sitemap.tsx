@@ -1,4 +1,6 @@
-import Link from 'next/link';
+import { Link } from '@chakra-ui/react';
+import NextLink from 'next/link';
+
 import menu from '../../../../settings/menu.json';
 
 function Sitemap() {
@@ -8,7 +10,7 @@ function Sitemap() {
       <ul className="reset-style">
         {menu.entries.map(({ label, path }) => (
           <li key={`${label}-${path}`}>
-            <Link href={path}>{label}</Link>
+            <Link as={NextLink} href={path}>{label}</Link>
           </li>
         ))}
       </ul>
