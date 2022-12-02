@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import menu from '../../../settings/menu.json';
+import menu from '../../../../settings/menu.json';
 
 function Sitemap() {
   return (
