@@ -1,0 +1,67 @@
+{
+  "entries": [
+    {
+      "label": "Adulți",
+      "prices": [
+        {
+          "label": "1 intrare",
+          "price": "30 RON"
+        },
+        {
+          "label": "Abonament 10 intrari",
+          "price": "270 RON"
+        },
+        {
+          "label": "Abonament 1 luna",
+          "price": "240 RON"
+        },
+        {
+          "label": "Abonament 3 luni",
+          "price": "640 RON"
+        }
+      ]
+    },
+    {
+      "label": "Copii",
+      "prices": [
+        {
+          "label": "1 intrare",
+          "price": "25 RON"
+        },
+        {
+          "label": "Abonament 10 intrari",
+          "price": "225 RON"
+        },
+        {
+          "label": "Abonament 1 luna",
+          "price": "200 RON"
+        },
+        {
+          "label": "Abonament 3 luni",
+          "price": "540 RON"
+        }
+      ]
+    },
+    {
+      "label": "Închiriere",
+      "prices": [
+        {
+          "label": "Papuci",
+          "price": "15 RON"
+        },
+        {
+          "label": "Coardă",
+          "price": "20 RON"
+        },
+        {
+          "label": "Ham",
+          "price": "20 RON"
+        },
+        {
+          "label": "Dispozitiv de filat",
+          "price": "20 RON"
+        }
+      ]
+    }
+  ]
+}
