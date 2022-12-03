@@ -4,7 +4,7 @@ import Head from '../src/components/head';
 export default function Home() {
   return (
     <>
-      <Head />
+      <Head title="Home" />
       <ContentContainer my="30px">
         Morality christian deceptions burying abstract snare abstract reason inexpedient passion.
         Play good faith free passion battle horror noble virtues chaos philosophy reason ultimate.

@@ -1,20 +1,20 @@
 {
   "entries": [
     {
-      "label": "Satiul",
-      "path": "/space"
+      "label": "Ozaki Arena",
+      "path": "/"
     },
     {
-      "label": "Activități",
-      "path": "/activities"
+      "label": "Despre Ozaki",
+      "path": "/about"
     },
     {
-      "label": "Preturi",
+      "label": "Tarife",
       "path": "/prices"
     },
     {
-      "label": "Locație",
-      "path": "/location"
+      "label": "Contact",
+      "path": "/contact"
     },
     {
       "label": "Leaderboard",
