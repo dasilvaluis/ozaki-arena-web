@@ -18,7 +18,7 @@ function NavMobile({ menuEntries }: Props) {
   const btnRef = useRef<HTMLButtonElement>(null);
 
   return (
-    <Flex justifyContent="flex-end" py="20px" display={{ base: 'flex', md: 'none' }}>
+    <Flex justifyContent="flex-end" py="20px">
       <Button ref={btnRef} onClick={onOpen}>
         <HamburgerIcon />
       </Button>

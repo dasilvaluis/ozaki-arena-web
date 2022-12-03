@@ -12,7 +12,7 @@ type Props = {
 
 function NavDesktop({ menuEntries }: Props) {
   return (
-    <Flex justifyContent="flex-end" py="20px" display={{ base: 'none', md: 'flex' }}>
+    <Flex justifyContent="flex-end" py="20px">
       <HStack as="nav" spacing="0px">
         {menuEntries.map((item) => (
           <Link as={NextLink} href={item.path} key={item.path}>

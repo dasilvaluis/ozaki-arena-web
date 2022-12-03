@@ -1,4 +1,5 @@
-import { Flex } from '@chakra-ui/react';
+import { Box, Flex, Heading } from '@chakra-ui/react';
+import Link from 'next/link';
 import menu from '../../../settings/menu.json';
 import ContentContainer from '../../atoms/content-container';
 import BoxedImage from '../../molecules/boxed-image';
@@ -8,9 +9,16 @@ import NavMobile from './core/nav-mobile';
 function Navbar() {
   return (
     <ContentContainer as={Flex} justifyContent="space-between" alignItems="center">
-      <BoxedImage width="50px" height="50px" src="/brand-logo.png" alt="Brand Logo" objectFit="contain" />
-      <NavDesktop menuEntries={menu.entries} />
-      <NavMobile menuEntries={menu.entries} />
+      <Link href="/">
+        <BoxedImage width="50px" height="50px" src="/brand-logo.png" alt="Brand Logo" objectFit="contain" />
+      </Link>
+      <Box display={{ base: 'none', md: 'flex' }}>
+        <NavDesktop menuEntries={menu.entries} />
+      </Box>
+      <Heading as="h5" size="lg" display={{ base: 'flex', md: 'none' }}>Ozaki Arena</Heading>
+      <Box display={{ base: 'flex', md: 'none' }}>
+        <NavMobile menuEntries={menu.entries} />
+      </Box>
     </ContentContainer>
   );
 }
