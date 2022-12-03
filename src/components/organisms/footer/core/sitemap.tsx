@@ -1,7 +1,6 @@
 import { Link } from '@chakra-ui/react';
 import NextLink from 'next/link';
-
-import menu from '../../../../settings/menu.json';
+import menu from 'settings/menu.json';
 
 function Sitemap() {
   return (

@@ -1,4 +1,4 @@
-import program from '../../../../settings/program.json';
+import program from 'settings/program.json';
 
 function Program() {
   return (

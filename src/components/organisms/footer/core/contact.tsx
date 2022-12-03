@@ -1,5 +1,5 @@
 import { Link } from '@chakra-ui/react';
-import contact from '../../../../settings/contact.json';
+import contact from 'settings/contact.json';
 
 function Contact() {
   return (
