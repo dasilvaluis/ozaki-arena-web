@@ -3,7 +3,7 @@ const routes = {
   activities: '/activities',
   prices: '/prices',
   location: '/location',
-  leaderboard: '/leaderboard',
+  leaderboard: '/leaderboard'
 };
 
 export default routes;

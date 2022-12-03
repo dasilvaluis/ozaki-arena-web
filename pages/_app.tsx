@@ -7,9 +7,9 @@ const theme = extendTheme({
   colors: {
     brand: {
       primary: '#f7fafc',
-      secondary: '#1a202c',
-    },
-  },
+      secondary: '#1a202c'
+    }
+  }
 });
 
 export default function App({ Component, pageProps }: AppProps) {

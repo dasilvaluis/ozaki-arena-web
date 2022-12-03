@@ -1,42 +1,31 @@
 import { HamburgerIcon } from '@chakra-ui/icons';
 import {
-  Flex, Button, Link, useDisclosure, VStack,
+  Button, Flex, useDisclosure
 } from '@chakra-ui/react';
-import NextLink from 'next/link';
-import { useRef } from 'react';
-import Drawer from './drawer';
+import { RefObject } from 'react';
+import { createPortal } from 'react-dom';
+import NavigationEntries from './nav-entries';
 
 type Props = {
+  portalRef: RefObject<HTMLDivElement>
   menuEntries: {
     label: string;
     path: string;
   }[]
 }
 
-function NavMobile({ menuEntries }: Props) {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = useRef<HTMLButtonElement>(null);
+function NavMobile({ menuEntries, portalRef }: Props) {
+  const { isOpen, onClose, onToggle } = useDisclosure();
 
   return (
     <Flex justifyContent="flex-end" py="20px">
-      <Button ref={btnRef} onClick={onOpen}>
+      <Button onClick={onToggle} variant="link">
         <HamburgerIcon />
       </Button>
-      <Drawer
-        isOpen={isOpen}
-        onClose={onClose}
-        finalFocusRef={btnRef}
-      >
-        <VStack alignItems="left">
-          {menuEntries.map((item) => (
-            <Link as={NextLink} href={item.path} key={item.path}>
-              <Button variant="text">
-                {item.label}
-              </Button>
-            </Link>
-          ))}
-        </VStack>
-      </Drawer>
+      {isOpen && portalRef.current && createPortal(
+        <NavigationEntries direction="column" menuEntries={menuEntries} onItemClick={onClose} />,
+        portalRef.current
+      )}
     </Flex>
   );
 }

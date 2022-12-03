@@ -1,7 +1,5 @@
-import {
-  Button, HStack, Link, Flex,
-} from '@chakra-ui/react';
-import NextLink from 'next/link';
+import { Flex } from '@chakra-ui/react';
+import NavigationEntries from './nav-entries';
 
 type Props = {
   menuEntries: {
@@ -12,16 +10,8 @@ type Props = {
 
 function NavDesktop({ menuEntries }: Props) {
   return (
-    <Flex justifyContent="flex-end" py="20px">
-      <HStack as="nav" spacing="0px">
-        {menuEntries.map((item) => (
-          <Link as={NextLink} href={item.path} key={item.path}>
-            <Button variant="nav">
-              {item.label}
-            </Button>
-          </Link>
-        ))}
-      </HStack>
+    <Flex justifyContent="flex-end">
+      <NavigationEntries menuEntries={menuEntries} direction="row" />
     </Flex>
   );
 }

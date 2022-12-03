@@ -5,7 +5,7 @@ type Props = {
 }
 
 export default function Head({
-  title,
+  title
 }: Props) {
   return (
     <NextHead>

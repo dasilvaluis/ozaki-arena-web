@@ -7,7 +7,7 @@ type Data = {
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>,
+  res: NextApiResponse<Data>
 ) {
   if (req.query.secret !== process.env.PAGE_REVALIDATE_TOKEN) {
     return res.status(401).json({ revalidated: false, message: 'Invalid token.' });
@@ -21,7 +21,7 @@ export default async function handler(
     await res.revalidate(req.query.path);
 
     return res.json({
-      revalidated: true,
+      revalidated: true
     });
   } catch (err) {
     return res.status(500).send({ revalidated: false, message: 'Error revalidating' });

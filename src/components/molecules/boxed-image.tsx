@@ -10,7 +10,7 @@ function BoxedImage({
   height,
   src,
   alt,
-  objectFit,
+  objectFit
 }: Props) {
   return (
     <Box width={width} height={height || width} position="relative">
@@ -19,7 +19,7 @@ function BoxedImage({
         alt={alt}
         fill
         style={{
-          objectFit,
+          objectFit
         }}
       />
     </Box>

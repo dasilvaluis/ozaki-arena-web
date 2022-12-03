@@ -9,6 +9,8 @@
   "rules":  {
     "react/jsx-filename-extension": [2, { "extensions": [".jsx", ".tsx"] }],
     "react/jsx-props-no-spreading": [0],
+    "react/require-default-props" : [0],
+    "comma-dangle": ["error", "never"],
     "import/extensions": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"], "json": "always" }]
   }
 }
