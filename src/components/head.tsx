@@ -9,11 +9,7 @@ export default function Head({
 }: Props) {
   return (
     <NextHead>
-      <title>
-        Ozaki
-        {' | '}
-        {title}
-      </title>
+      <title>{`Ozaki | ${title}`}</title>
       <meta name="description" content="Ozaki Arena | Sala de Cățărat" />
       <link rel="icon" href="/favicon.ico" />
     </NextHead>
