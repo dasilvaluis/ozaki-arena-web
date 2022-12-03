@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import ContentContainer from './atoms/content-container';
 import Footer from './organisms/footer/footer';
 import Navbar from './organisms/navbar/navbar';
 
@@ -10,9 +11,9 @@ export default function RootLayout({ children }: Props) {
   return (
     <>
       <Navbar />
-      <main>
+      <ContentContainer as="main" my="30px">
         {children}
-      </main>
+      </ContentContainer>
       <Footer />
     </>
   );
