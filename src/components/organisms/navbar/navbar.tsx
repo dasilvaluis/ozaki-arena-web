@@ -1,4 +1,6 @@
-import { Box, Flex, Heading } from '@chakra-ui/react';
+import {
+  Box, Flex, Heading, chakra
+} from '@chakra-ui/react';
 import Link from 'next/link';
 import { useRef } from 'react';
 import menu from 'settings/menu.json';
@@ -11,7 +13,7 @@ function Navbar() {
   const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   return (
-    <header>
+    <chakra.header color="brand.secondary" bgColor="brand.primary">
       <ContentContainer as={Flex} py={{ base: '15px', md: '20px' }} justifyContent="space-between" alignItems="center">
         <Link href="/">
           <BoxedImage width="50px" height="50px" src="/brand-logo.png" alt="Brand Logo" objectFit="contain" />
@@ -27,7 +29,7 @@ function Navbar() {
       <ContentContainer>
         <div ref={mobileMenuRef} />
       </ContentContainer>
-    </header>
+    </chakra.header>
 
   );
 }

@@ -6,8 +6,8 @@ import '../src/styles/globals.css';
 const theme = extendTheme({
   colors: {
     brand: {
-      primary: '#f7fafc',
-      secondary: '#1a202c'
+      primary: '#aace58',
+      secondary: 'rgb(25, 22, 23)'
     }
   }
 });

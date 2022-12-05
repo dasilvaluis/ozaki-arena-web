@@ -1,4 +1,4 @@
-import { Box, Stack } from '@chakra-ui/react';
+import { Box, Stack, chakra } from '@chakra-ui/react';
 import ContentContainer from '../../atoms/content-container';
 import BoxedImage from '../../molecules/boxed-image';
 import Contact from './core/contact';
@@ -7,7 +7,7 @@ import Sitemap from './core/sitemap';
 
 function Footer() {
   return (
-    <Box as="footer" bg="brand.primary" padding="2rem 0">
+    <chakra.footer padding="2rem 0" bgColor="brand.primary" color="brand.secondary">
       <ContentContainer margin="auto">
         <Stack justifyContent="space-between" direction={{ base: 'column', md: 'row' }} spacing="50px">
           <BoxedImage width="100px" src="/brand-logo.png" alt="Brand Logo" objectFit="contain" />
@@ -24,7 +24,7 @@ function Footer() {
           </Stack>
         </Stack>
       </ContentContainer>
-    </Box>
+    </chakra.footer>
   );
 }
 
