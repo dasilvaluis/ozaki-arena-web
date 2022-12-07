@@ -17,7 +17,7 @@ function Header() {
   const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   return (
-    <chakra.header color="textOverPrimary" bgColor="primary">
+    <chakra.header id="site-header" color="textOverPrimary" bgColor="primary">
       <ContentContainer>
         <Flex py={responsive('1rem', '1.25rem')} justifyContent="space-between" alignItems="center">
           <Link href="/">

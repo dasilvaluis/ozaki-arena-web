@@ -1,0 +1,12 @@
+{
+  "entries": [
+    {
+      "src": "/photo-corner.jpg",
+      "alt": "Gym corner photo"
+    },
+    {
+      "src": "/photo-front.jpg",
+      "alt": "Gym front photo"
+    }
+  ]
+}
