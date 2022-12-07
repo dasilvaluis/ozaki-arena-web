@@ -7,10 +7,10 @@ function ContentContainer({ children, ...props }: Props) {
   return (
     <chakra.div
       width={{
-        base: '100%', md: '90%', lg: '80%', xl: '70%'
+        base: '100%', md: '90%', lg: '80%'
       }}
       maxW="1500px"
-      px="20px"
+      px={{ base: '20px', md: 'initial' }}
       mx="auto"
       {...props}
     >

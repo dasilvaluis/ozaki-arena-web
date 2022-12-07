@@ -1,6 +1,6 @@
 import { HamburgerIcon } from '@chakra-ui/icons';
 import {
-  Box, Button, useDisclosure, VStack
+  Box, Button, Collapse, useDisclosure, VStack
 } from '@chakra-ui/react';
 import { RefObject } from 'react';
 import { createPortal } from 'react-dom';
@@ -22,10 +22,12 @@ function NavMobile({ menuEntries, portalRef }: Props) {
       <Button onClick={onToggle} variant="link">
         <HamburgerIcon />
       </Button>
-      {isOpen && portalRef.current && createPortal(
-        <VStack alignItems="left" as="nav" pb="1rem">
-          <NavigationEntries menuEntries={menuEntries} onItemClick={onClose} />
-        </VStack>,
+      {portalRef.current && createPortal(
+        <Collapse in={isOpen} animateOpacity>
+          <VStack alignItems="left" as="nav" pb="1rem">
+            <NavigationEntries menuEntries={menuEntries} onItemClick={onClose} />
+          </VStack>
+        </Collapse>,
         portalRef.current
       )}
     </Box>

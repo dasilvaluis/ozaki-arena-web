@@ -8,7 +8,7 @@ const theme = extendTheme({
       secondary: 'green.600',
       textOverPrimary: 'gray.200',
       text: {
-        default: 'gray.50',
+        default: 'gray.200',
         _dark: 'gray.50'
       }
     }

@@ -1,4 +1,4 @@
-import BoxedImage from '../../../molecules/boxed-image';
+import BoxedImage from 'components/molecules/boxed-image';
 
 function Logo() {
   return (

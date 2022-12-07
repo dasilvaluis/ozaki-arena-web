@@ -1,11 +1,11 @@
 import {
-  Box, Flex, Heading, chakra
+  Box, chakra, Flex, Heading
 } from '@chakra-ui/react';
+import ContentContainer from 'components/atoms/content-container';
+import BoxedImage from 'components/molecules/boxed-image';
 import Link from 'next/link';
 import { useRef } from 'react';
 import menu from 'settings/menu.json';
-import ContentContainer from '../../atoms/content-container';
-import BoxedImage from '../../molecules/boxed-image';
 import NavDesktop from './core/nav-desktop';
 import NavMobile from './core/nav-mobile';
 
