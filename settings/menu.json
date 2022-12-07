@@ -1,7 +1,7 @@
 {
   "entries": [
     {
-      "label": "Ozaki Arena",
+      "label": "Acasa",
       "path": "/"
     },
     {
@@ -15,6 +15,14 @@
     {
       "label": "Contact",
       "path": "/contact"
+    },
+    {
+      "label": "Blog",
+      "path": "/blog"
+    },
+    {
+      "label": "Activități",
+      "path": "/activitati"
     },
     {
       "label": "Leaderboard",

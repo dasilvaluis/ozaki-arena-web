@@ -1,7 +1,7 @@
 import { Box, BoxProps } from '@chakra-ui/react';
 import Image, { ImageProps } from 'next/image';
 
-type Props = Pick<BoxProps, 'width' | 'height'> & Pick<ImageProps, 'src' | 'alt'> & {
+type Props = BoxProps & Pick<ImageProps, 'src' | 'alt'> & {
   objectFit: 'fill' | 'contain' | 'cover' | 'none' | 'scale-down'
 };
 
@@ -10,10 +10,11 @@ function BoxedImage({
   height,
   src,
   alt,
-  objectFit
+  objectFit,
+  ...props
 }: Props) {
   return (
-    <Box width={width} height={height || width} position="relative">
+    <Box width={width} height={height || width} position="relative" {...props}>
       <Image
         src={src}
         alt={alt}

@@ -1,17 +1,14 @@
-import { ReactNode } from 'react';
+import { Box, Flex } from '@chakra-ui/react';
+import { WithChildren } from 'src/types';
 import Footer from './organisms/footer/footer';
-import Navbar from './organisms/navbar/navbar';
+import Header from './organisms/navbar/header';
 
-type Props = {
-  children: ReactNode;
-}
-
-export default function RootLayout({ children }: Props) {
+export default function RootLayout({ children }: WithChildren) {
   return (
-    <>
-      <Navbar />
-      {children}
+    <Flex minHeight="100vh" direction="column">
+      <Header />
+      <Box flex="1">{children}</Box>
       <Footer />
-    </>
+    </Flex>
   );
 }

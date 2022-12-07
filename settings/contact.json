@@ -3,12 +3,21 @@
   "phone": "+40 666 999 955",
   "address": {
     "entries": [
-      "Str. Ștefan cel Mare 154, Sibiu",
-      "Clădire Independența"
-    ]
+      "Independența SA - 2", 
+      "Str. Ștefan cel Mare, Sibiu"
+    ],
+    "coordinates_link": "https://goo.gl/maps/vhMgFFGavdPPZ4TA8"
   },
   "social": {
-    "facebook": "https://www.facebook.com/OzakiArena/",
-    "instagram": "https://www.instagram.com/ozaki_arena/"
+    "entries": [
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/OzakiArena/"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/ozaki_arena/"
+      }
+    ]
   }
 }
