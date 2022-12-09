@@ -1,6 +1,6 @@
 import { HamburgerIcon } from '@chakra-ui/icons';
 import {
-  Box, Button, Collapse, Flex, useDisclosure, VStack
+  Button, Collapse, Flex, useDisclosure, VStack
 } from '@chakra-ui/react';
 import { RefObject } from 'react';
 import { createPortal } from 'react-dom';

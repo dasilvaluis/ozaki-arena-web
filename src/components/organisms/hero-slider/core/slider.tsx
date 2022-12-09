@@ -1,4 +1,5 @@
 import { Box } from '@chakra-ui/react';
+import Overlay from 'components/atoms/overlay';
 import FadeSlider from 'components/molecules/fade-slider';
 import homeSlider from 'settings/home-slider.json';
 import headerConstants from 'src/constants/header';
@@ -22,14 +23,7 @@ function Slider({ children }: WithChildren) {
         interval={5500}
         transitionDuration={0.7}
       />
-      <Box
-        bg="rgba(0, 0, 0, 0.25)"
-        position="absolute"
-        width="100%"
-        height="100%"
-        top={0}
-        bottom={0}
-      />
+      <Overlay />
       <Box position="absolute" bottom="5rem" width="100%">
         {children}
       </Box>

@@ -1,18 +1,32 @@
-import { chakra, Heading } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import ContentContainer from 'components/atoms/content-container';
-import Slider from './core/slider';
+import Overlay from 'components/atoms/overlay';
+import Image from 'next/image';
+import { biResponsiveMd } from 'src/helpers/responsive';
+import type { ImageMeta, WithChildren } from 'src/types';
 
-function Hero() {
+type Props = WithChildren & {
+  heroImage: ImageMeta
+}
+
+function Hero({ children, heroImage }: Props) {
   return (
-    <Slider>
-      <ContentContainer color="text">
-        <Heading as="h1" size="4xl">Ozaki Arena</Heading>
-        <Heading as="h2">Cea mai tare sala de catarat in Romania</Heading>
-        <chakra.p>
-          Bouldering | Catarat | Training | Ninja Warrior | Activitati pentru Copii
-        </chakra.p>
-      </ContentContainer>
-    </Slider>
+    <Box width="100%" height={biResponsiveMd('12rem', '20rem')} position="relative">
+      <Image
+        src={heroImage.src}
+        alt={heroImage.alt}
+        fill
+        style={{
+          objectFit: 'cover'
+        }}
+      />
+      <Overlay />
+      <Box position="absolute" bottom="2rem" width="100%">
+        <ContentContainer color="text">
+          {children}
+        </ContentContainer>
+      </Box>
+    </Box>
   );
 }
 

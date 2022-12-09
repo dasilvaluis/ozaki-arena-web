@@ -3,14 +3,12 @@ import {
 } from '@chakra-ui/react';
 import useRange from 'hooks/useRange';
 import Image from 'next/image';
+import type { ImageMeta } from 'src/types';
 
 type Props = Omit<BoxProps, 'transitionDuration'> & {
   interval: number;
   transitionDuration: number;
-  images: {
-    src: string;
-    alt: string;
-  }[]
+  images: ImageMeta[]
 };
 
 function FadeSlider({

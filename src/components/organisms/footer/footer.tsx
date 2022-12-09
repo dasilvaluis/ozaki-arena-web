@@ -7,7 +7,7 @@ import Sitemap from './core/sitemap';
 
 function Footer() {
   return (
-    <chakra.footer padding="5rem 0 3rem" bgColor="primary" color="textOverPrimary">
+    <chakra.footer padding="5rem 0 3rem" bgColor="secondary" color="textOverPrimary">
       <ContentContainer margin="auto">
         <Stack direction={{ base: 'column', md: 'row' }} justifyContent="space-between" gap="25px">
           <Logo />

@@ -1,11 +1,30 @@
-import MainContainer from 'src/components/atoms/main-container';
-import Head from '../src/components/head';
+import PageTemplate from 'components/templates/page-template';
+import { ImageMeta } from 'src/types';
 
-export default function About() {
+type Props = {
+  heroImage: ImageMeta;
+}
+
+export default function About({ heroImage }: Props) {
   return (
-    <>
-      <Head title="Despre" />
-      <MainContainer>About us</MainContainer>
-    </>
+    <PageTemplate
+      title="Despre Ozaki Arena"
+      heroImage={heroImage}
+    >
+      About us
+    </PageTemplate>
   );
+}
+
+export async function getStaticProps() {
+  const heroImage: ImageMeta = {
+    src: 'https://picsum.photos/1920/540',
+    alt: 'About Page Hero'
+  };
+
+  return {
+    props: {
+      heroImage
+    }
+  };
 }

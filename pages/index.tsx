@@ -1,13 +1,20 @@
+import { Heading, Text } from '@chakra-ui/react';
 import MainContainer from 'components/atoms/main-container';
-import Hero from 'components/organisms/hero/hero';
 import Head from 'components/head';
+import HeroSlider from 'components/organisms/hero-slider/hero-slider';
 
 export default function Home() {
   return (
     <>
       <Head title="Home" />
       <main>
-        <Hero />
+        <HeroSlider>
+          <Heading as="h1" size="4xl" mb=".25rem">Ozaki Arena</Heading>
+          <Heading as="h3" size="lg" ml="0.2rem">Sala ta de alpinism din Sibiu</Heading>
+          <Text ml="0.2rem" mt=".75rem">
+            Cățărat | Training | Ninja Warrior | Instrucţie | Activități pentru copii
+          </Text>
+        </HeroSlider>
         <MainContainer as="div">
           Morality christian deceptions burying abstract snare abstract reason inexpedient passion.
           Play good faith free passion battle horror noble virtues chaos philosophy reason ultimate.

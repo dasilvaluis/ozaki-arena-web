@@ -5,6 +5,8 @@ specifiers:
   '@chakra-ui/react': 2.4.2
   '@emotion/react': 11.10.5
   '@emotion/styled': 11.10.5
+  '@fontsource/montserrat': 4.5.13
+  '@fontsource/source-sans-pro': 4.5.11
   '@types/node': 18.11.9
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.9
@@ -27,6 +29,8 @@ dependencies:
   '@chakra-ui/react': 2.4.2_u7xujka4dmve4utltfp2p4gy4q
   '@emotion/react': 11.10.5_fan5qbzahqtxlm5dzefqlqx5ia
   '@emotion/styled': 11.10.5_otcjdfkheatawhug6fwk7ldzni
+  '@fontsource/montserrat': 4.5.13
+  '@fontsource/source-sans-pro': 4.5.11
   framer-motion: 7.6.15_biqbaboplfbrettd7655fr4n2y
   next: 13.0.5_m5sxuueb27gk6ddc5gums6vtgq
   react: 18.2.0
@@ -1315,6 +1319,14 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@fontsource/montserrat/4.5.13:
+    resolution: {integrity: sha512-/XlcNsMFjdWX4Away8Ax/4NgND8Ckk9gVDwgz1sfxF6h+gFHChLOV0IvPrUfCQjZ1F35igg+nR9bSxmjsYEskQ==}
+    dev: false
+
+  /@fontsource/source-sans-pro/4.5.11:
+    resolution: {integrity: sha512-f7iw44q1EjBv3MNcHCGAgrW/QVyweaEouFsJzykPhTOGnZFSwFJRISToXornOmuAy7xUUGiVdqOLiykgZoYB8A==}
+    dev: false
 
   /@humanwhocodes/config-array/0.11.7:
     resolution: {integrity: sha512-kBbPWzN8oVMLb0hOUYXhmxggL/1cJE6ydvjDIGi9EnAGUyA7cLVKQg+d/Dsm+KZwx2czGHrCmMVLiyg8s5JPKw==}

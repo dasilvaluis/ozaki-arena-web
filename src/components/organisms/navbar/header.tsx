@@ -20,7 +20,7 @@ function Header() {
   const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   return (
-    <chakra.header id="site-header" color="textOverPrimary" bgColor="primary">
+    <chakra.header id="site-header" color="textOverPrimary" bgColor="secondary">
       <ContentContainer>
         <Flex height={headerHeightResponsiveMap} justifyContent="space-between" alignItems="center">
           <Link href="/">
