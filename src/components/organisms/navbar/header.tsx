@@ -6,12 +6,15 @@ import BoxedImage from 'components/molecules/boxed-image';
 import Link from 'next/link';
 import { useRef } from 'react';
 import menu from 'settings/menu.json';
+import headerConstants from 'src/constants/header';
+import { biResponsiveLg } from 'src/helpers/responsive';
 import NavDesktop from './core/nav-desktop';
 import NavMobile from './core/nav-mobile';
 
-const responsive = <B, M>(base: B, desktop: M) => ({ base, lg: desktop });
-const mobileDisplay = responsive('block', 'none');
-const desktopDisplay = responsive('none', 'block');
+const mobileDisplay = biResponsiveLg('block', 'none');
+const desktopDisplay = biResponsiveLg('none', 'block');
+
+const { headerHeight: headerHeightResponsiveMap } = headerConstants;
 
 function Header() {
   const mobileMenuRef = useRef<HTMLDivElement>(null);
@@ -19,7 +22,7 @@ function Header() {
   return (
     <chakra.header id="site-header" color="textOverPrimary" bgColor="primary">
       <ContentContainer>
-        <Flex py={responsive('1rem', '1.25rem')} justifyContent="space-between" alignItems="center">
+        <Flex height={headerHeightResponsiveMap} justifyContent="space-between" alignItems="center">
           <Link href="/">
             <BoxedImage width="3.125rem" height="3.125rem" src="/brand-logo.png" alt="Brand Logo" objectFit="contain" />
           </Link>

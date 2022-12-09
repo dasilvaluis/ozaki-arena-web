@@ -1,18 +1,23 @@
-import { Box, useCallbackRef } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import FadeSlider from 'components/molecules/fade-slider';
-import useElementBoundingRect from 'hooks/useElementBoundingRect';
 import homeSlider from 'settings/home-slider.json';
+import headerConstants from 'src/constants/header';
+import { biResponsiveLg } from 'src/helpers/responsive';
 import { WithChildren } from 'src/types';
 
+const { headerHeight: headerHeightResponsiveMap } = headerConstants;
+
 function Slider({ children }: WithChildren) {
-  const getHeaderEl = useCallbackRef(() => document.getElementById('site-header'), []);
-  const { height: headerHeight } = useElementBoundingRect(getHeaderEl) ?? { height: 0 };
+  const headerHeight = biResponsiveLg(
+    `calc(100vh - ${headerHeightResponsiveMap.base})`,
+    `calc(100vh - ${headerHeightResponsiveMap.lg})`
+  );
 
   return (
     <Box position="relative">
       <FadeSlider
         width="100vw"
-        height={`calc(100vh - ${headerHeight}px)`}
+        height={headerHeight}
         images={homeSlider.entries}
         interval={5500}
         transitionDuration={0.7}

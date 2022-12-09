@@ -7,7 +7,7 @@ function Hero() {
     <Slider>
       <ContentContainer color="text">
         <Heading as="h1" size="4xl">Ozaki Arena</Heading>
-        <Heading as="h2">Cel mai tare sala de catarat in Romania</Heading>
+        <Heading as="h2">Cea mai tare sala de catarat in Romania</Heading>
         <chakra.p>
           Bouldering | Catarat | Training | Ninja Warrior | Activitati pentru Copii
         </chakra.p>
