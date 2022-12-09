@@ -1,12 +1,20 @@
 {
   "entries": [
     {
-      "label": "Acasa",
+      "label": "Acasă",
       "path": "/"
     },
     {
-      "label": "Despre Ozaki",
+      "label": "Despre",
       "path": "/despre"
+    },
+    {
+      "label": "Prima Vizita",
+      "path": "/prima-vizita"
+    },
+    {
+      "label": "Copii Arena",
+      "path": "/copii-arena"
     },
     {
       "label": "Tarife",

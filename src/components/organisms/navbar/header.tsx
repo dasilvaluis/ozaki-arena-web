@@ -7,12 +7,12 @@ import Link from 'next/link';
 import { useRef } from 'react';
 import menu from 'settings/menu.json';
 import headerConstants from 'src/constants/header';
-import { biResponsiveLg } from 'src/helpers/responsive';
+import { biResponsiveXl } from 'src/helpers/responsive';
 import NavDesktop from './core/nav-desktop';
 import NavMobile from './core/nav-mobile';
 
-const mobileDisplay = biResponsiveLg('block', 'none');
-const desktopDisplay = biResponsiveLg('none', 'block');
+const mobileDisplay = biResponsiveXl('block', 'none');
+const desktopDisplay = biResponsiveXl('none', 'block');
 
 const { headerHeight: headerHeightResponsiveMap } = headerConstants;
 
