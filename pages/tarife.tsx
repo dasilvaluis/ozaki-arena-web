@@ -1,25 +1,33 @@
-import { Box, Heading } from '@chakra-ui/react';
-import { Fragment } from 'react';
+import { Stack } from '@chakra-ui/react';
+import PageTemplate from 'components/templates/page-template';
+import { Bundles, PriceTables } from 'components/views/tarife';
 import prices from 'settings/prices.json';
-import MainContainer from 'src/components/atoms/main-container';
-import PriceTable from 'src/components/organisms/price-table/price-table';
-import Head from '../src/components/head';
+import { ImageMeta } from 'types';
 
-export default function Prices() {
+type Props = {
+  heroImage: ImageMeta;
+}
+
+export default function Tarife({ heroImage }: Props) {
   return (
-    <>
-      <Head title="Tarife" />
-      <MainContainer>
-        <Heading as="h1" size="lg">Tarife</Heading>
-
-        {prices.entries.map((priceGroup) => (
-          <Fragment key={priceGroup.label}>
-            <Box my="30px">
-              <PriceTable priceGroup={priceGroup} />
-            </Box>
-          </Fragment>
-        ))}
-      </MainContainer>
-    </>
+    <PageTemplate title="Tarife" subTitle="Găsește-ți ofertele" heroImage={heroImage}>
+      <Stack my="4rem" gap="3rem" direction="column">
+        <PriceTables prices={prices.entries} />
+        <Bundles bundles={prices.bundles} />
+      </Stack>
+    </PageTemplate>
   );
+}
+
+export async function getStaticProps() {
+  const heroImage: ImageMeta = {
+    src: 'https://picsum.photos/seed/tarife/1920/540',
+    alt: 'Prices Page Hero'
+  };
+
+  return {
+    props: {
+      heroImage
+    }
+  };
 }

@@ -8,3 +8,17 @@ export interface ImageMeta {
   src: string;
   alt: string;
 }
+
+export type PriceGroup = {
+  label: string;
+  prices: {
+    label: string;
+    value: string;
+  }[]
+};
+
+export type BundleMeta = {
+  label: string;
+  price: string;
+  includes: string[]
+};

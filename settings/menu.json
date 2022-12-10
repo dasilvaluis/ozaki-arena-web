@@ -13,24 +13,12 @@
       "path": "/prima-vizita"
     },
     {
-      "label": "Copii Arena",
-      "path": "/copii-arena"
-    },
-    {
       "label": "Tarife",
       "path": "/tarife"
     },
     {
       "label": "Contact",
       "path": "/contact"
-    },
-    {
-      "label": "Blog",
-      "path": "/blog"
-    },
-    {
-      "label": "Activități",
-      "path": "/activitati"
     },
     {
       "label": "Leaderboard",

@@ -1,11 +1,38 @@
-import MainContainer from 'components/atoms/main-container';
-import Head from 'components/head';
+import { Stack } from '@chakra-ui/react';
+import PageTemplate from 'components/templates/page-template';
+import { FirstTime, Intro, Rules } from 'components/views/first-visit';
+import { ImageMeta } from 'src/types';
 
-export default function PrimaVizita() {
+type Props = {
+  heroImage: ImageMeta;
+}
+
+export default function Contact({ heroImage }: Props) {
   return (
-    <>
-      <Head title="Prima Vizita" />
-      <MainContainer>Prima Vizita</MainContainer>
-    </>
+    <PageTemplate
+      title="Prima Vizita"
+      subTitle="Cățărat este pentru toată lumea"
+      heroImage={heroImage}
+    >
+      <Stack my="6rem" gap="6rem" direction="column">
+        <Intro />
+        <FirstTime />
+        <Rules />
+      </Stack>
+
+    </PageTemplate>
   );
+}
+
+export async function getStaticProps() {
+  const heroImage: ImageMeta = {
+    src: 'https://picsum.photos/seed/first-visit/1920/540',
+    alt: 'First Visit Page Hero'
+  };
+
+  return {
+    props: {
+      heroImage
+    }
+  };
 }

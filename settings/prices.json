@@ -5,19 +5,19 @@
       "prices": [
         {
           "label": "1 intrare",
-          "price": "30 RON"
+          "value": "30 RON"
         },
         {
           "label": "Abonament 10 intrari",
-          "price": "270 RON"
+          "value": "270 RON"
         },
         {
           "label": "Abonament 1 luna",
-          "price": "240 RON"
+          "value": "240 RON"
         },
         {
           "label": "Abonament 3 luni",
-          "price": "640 RON"
+          "value": "640 RON"
         }
       ]
     },
@@ -26,19 +26,19 @@
       "prices": [
         {
           "label": "1 intrare",
-          "price": "25 RON"
+          "value": "25 RON"
         },
         {
           "label": "Abonament 10 intrari",
-          "price": "225 RON"
+          "value": "225 RON"
         },
         {
           "label": "Abonament 1 luna",
-          "price": "200 RON"
+          "value": "200 RON"
         },
         {
           "label": "Abonament 3 luni",
-          "price": "540 RON"
+          "value": "540 RON"
         }
       ]
     },
@@ -47,20 +47,31 @@
       "prices": [
         {
           "label": "Papuci",
-          "price": "15 RON"
+          "value": "15 RON"
         },
         {
           "label": "Coardă",
-          "price": "20 RON"
+          "value": "20 RON"
         },
         {
           "label": "Ham",
-          "price": "20 RON"
+          "value": "20 RON"
         },
         {
           "label": "Dispozitiv de filat",
-          "price": "20 RON"
+          "value": "20 RON"
         }
+      ]
+    }
+  ],
+  "bundles": [
+    {
+      "label": "Pachet pentru începători",
+      "price": "240 RON",
+      "includes": [
+        "Abonament de 3 luni",
+        "Închiriere gratuită de echipamente",
+        "1 sesiune de instruire pe săptămână"
       ]
     }
   ]
