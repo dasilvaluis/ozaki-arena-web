@@ -1,5 +1,5 @@
 import MainContainer from 'components/atoms/main-container';
-import Head from 'components/head';
+import Head from 'components/organisms/head';
 
 export default function CopiiArena() {
   return (

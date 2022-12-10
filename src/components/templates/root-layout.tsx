@@ -1,7 +1,7 @@
 import { Box, Flex } from '@chakra-ui/react';
 import { WithChildren } from 'src/types';
-import Footer from './organisms/footer/footer';
-import Header from './organisms/navbar/header';
+import Footer from '../organisms/footer/footer';
+import Header from '../organisms/navbar/header';
 
 export default function RootLayout({ children }: WithChildren) {
   return (

@@ -1,3 +1,4 @@
+import { Text } from '@chakra-ui/react';
 import PageTemplate from 'components/templates/page-template';
 import { ImageMeta } from 'src/types';
 
@@ -8,17 +9,18 @@ type Props = {
 export default function About({ heroImage }: Props) {
   return (
     <PageTemplate
-      title="Despre Ozaki Arena"
+      title="Despre Noi"
+      subTitle="Aflați despre sala de sport"
       heroImage={heroImage}
     >
-      About us
+      <Text>About us</Text>
     </PageTemplate>
   );
 }
 
 export async function getStaticProps() {
   const heroImage: ImageMeta = {
-    src: 'https://picsum.photos/1920/540',
+    src: 'https://picsum.photos/seed/about/1920/540',
     alt: 'About Page Hero'
   };
 

@@ -9,11 +9,11 @@ function Footer() {
   return (
     <chakra.footer padding="5rem 0 3rem" bgColor="secondary" color="textOverPrimary">
       <ContentContainer margin="auto">
-        <Stack direction={{ base: 'column', md: 'row' }} justifyContent="space-between" gap="25px">
+        <Stack direction={{ base: 'column', md: 'row' }} justifyContent="space-between" gap="1.5rem">
           <Logo />
           <Grid
             templateColumns={{ base: 'repeat(1, 1fr)', sm: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)' }}
-            gap={{ base: '25px', lg: '75px' }}
+            gap={{ base: '1.5rem', lg: '4.75rem' }}
           >
             <Sitemap />
             <Program />

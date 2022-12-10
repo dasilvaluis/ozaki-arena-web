@@ -1,40 +1,42 @@
+import { HamburgerIcon } from '@chakra-ui/icons';
 import {
-  Box, chakra, Flex, Heading
+  Button, chakra, Flex, Heading, Show, useDisclosure
 } from '@chakra-ui/react';
 import ContentContainer from 'components/atoms/content-container';
 import BoxedImage from 'components/molecules/boxed-image';
 import Link from 'next/link';
-import { useRef } from 'react';
 import menu from 'settings/menu.json';
 import headerConstants from 'src/constants/header';
-import { biResponsiveXl } from 'src/helpers/responsive';
 import NavDesktop from './core/nav-desktop';
 import NavMobile from './core/nav-mobile';
 
-const mobileDisplay = biResponsiveXl('block', 'none');
-const desktopDisplay = biResponsiveXl('none', 'block');
+const navbarBreakpoint = 'lg';
 
 const { headerHeight: headerHeightResponsiveMap } = headerConstants;
 
 function Header() {
-  const mobileMenuRef = useRef<HTMLDivElement>(null);
+  const { isOpen, onClose, onToggle } = useDisclosure();
 
   return (
     <chakra.header id="site-header" color="textOverPrimary" bgColor="secondary">
-      <ContentContainer>
+      <ContentContainer position="relative">
         <Flex height={headerHeightResponsiveMap} justifyContent="space-between" alignItems="center">
           <Link href="/">
-            <BoxedImage width="3.125rem" height="3.125rem" src="/brand-logo.png" alt="Brand Logo" objectFit="contain" />
+            <BoxedImage width="3.125rem" src="/brand-logo.png" alt="Brand Logo" objectFit="contain" />
           </Link>
-          <Box display={desktopDisplay}>
+          <Show above={navbarBreakpoint}>
             <NavDesktop menuEntries={menu.entries} />
-          </Box>
-          <Heading as="h5" size="md" display={mobileDisplay}>Ozaki Arena</Heading>
-          <Box display={mobileDisplay}>
-            <NavMobile portalRef={mobileMenuRef} menuEntries={menu.entries} />
-          </Box>
+          </Show>
+          <Show below={navbarBreakpoint}>
+            <Heading as="h5" size="md" m={0}>Ozaki Arena</Heading>
+            <Button onClick={onToggle} variant="link">
+              <HamburgerIcon color="white" />
+            </Button>
+          </Show>
         </Flex>
-        <Box display={mobileDisplay} ref={mobileMenuRef} />
+        <Show below={navbarBreakpoint}>
+          <NavMobile isOpen={isOpen} menuEntries={menu.entries} onItemClick={onClose} />
+        </Show>
       </ContentContainer>
     </chakra.header>
 

@@ -6,7 +6,7 @@ function Contact() {
   return (
     <div>
       <h6><b>Contact</b></h6>
-      <VStack as="address" gap="10px" alignItems="left" fontStyle="initial">
+      <VStack as="address" gap="0.75rem" alignItems="left" fontStyle="initial">
         <div>
           {contact.address.entries.map((item) => <div key={item}>{item}</div>)}
           <ExternalLink href={contact.address.coordinates_link}>Google Maps</ExternalLink>

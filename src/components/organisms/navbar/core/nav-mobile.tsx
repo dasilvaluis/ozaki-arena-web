@@ -1,36 +1,23 @@
-import { HamburgerIcon } from '@chakra-ui/icons';
-import {
-  Button, Collapse, Flex, useDisclosure, VStack
-} from '@chakra-ui/react';
-import { RefObject } from 'react';
-import { createPortal } from 'react-dom';
+import { Collapse, VStack } from '@chakra-ui/react';
+import { MouseEventHandler } from 'react';
 import NavigationEntries from './menu-entries';
 
 type Props = {
-  portalRef: RefObject<HTMLDivElement>
+  isOpen: boolean;
+  onItemClick: MouseEventHandler;
   menuEntries: {
     label: string;
     path: string;
   }[]
 }
 
-function NavMobile({ menuEntries, portalRef }: Props) {
-  const { isOpen, onClose, onToggle } = useDisclosure();
-
+function NavMobile({ menuEntries, isOpen, onItemClick }: Props) {
   return (
-    <Flex>
-      <Button onClick={onToggle} variant="link">
-        <HamburgerIcon color="white" />
-      </Button>
-      {portalRef.current && createPortal(
-        <Collapse in={isOpen} animateOpacity>
-          <VStack alignItems="left" as="nav" py="1rem">
-            <NavigationEntries menuEntries={menuEntries} onItemClick={onClose} />
-          </VStack>
-        </Collapse>,
-        portalRef.current
-      )}
-    </Flex>
+    <Collapse in={isOpen} animateOpacity>
+      <VStack alignItems="left" as="nav" py="1rem">
+        <NavigationEntries menuEntries={menuEntries} onItemClick={onItemClick} />
+      </VStack>
+    </Collapse>
   );
 }
 

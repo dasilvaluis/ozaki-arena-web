@@ -1,9 +1,12 @@
-import { Box } from '@chakra-ui/react';
+import { Box, BoxProps } from '@chakra-ui/react';
 
-function Overlay() {
+type Props = Pick<BoxProps, 'opacity'>;
+
+function Overlay({ opacity = 0.3 }: Props) {
   return (
     <Box
-      bg="rgba(0, 0, 0, 0.25)"
+      bg="secondary"
+      opacity={opacity}
       position="absolute"
       width="100%"
       height="100%"

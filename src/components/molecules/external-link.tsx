@@ -6,7 +6,7 @@ function ExternalLink({ children, ...props }: LinkProps) {
     <Link isExternal {...props}>
       {children}
       {' '}
-      <ExternalLinkIcon mx="2px" />
+      <ExternalLinkIcon mx="0.125rem" />
     </Link>
   );
 }

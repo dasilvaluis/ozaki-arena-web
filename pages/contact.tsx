@@ -1,13 +1,32 @@
-import MainContainer from 'src/components/atoms/main-container';
-import Head from '../src/components/head';
+import { Text } from '@chakra-ui/react';
+import PageTemplate from 'components/templates/page-template';
+import { ImageMeta } from 'src/types';
 
-export default function Contact() {
+type Props = {
+  heroImage: ImageMeta;
+}
+
+export default function Contact({ heroImage }: Props) {
   return (
-    <>
-      <Head title="Contact" />
-      <MainContainer>
-        Contact
-      </MainContainer>
-    </>
+    <PageTemplate
+      title="Contact"
+      subTitle="Gaseste-ne"
+      heroImage={heroImage}
+    >
+      <Text>Contact</Text>
+    </PageTemplate>
   );
+}
+
+export async function getStaticProps() {
+  const heroImage: ImageMeta = {
+    src: 'https://picsum.photos/seed/contact/1920/540',
+    alt: 'Contact Page Hero'
+  };
+
+  return {
+    props: {
+      heroImage
+    }
+  };
 }

@@ -10,8 +10,14 @@ function ContentContainer({ children, ...props }: Props) {
         base: '100%', md: '90%', lg: '80%'
       }}
       maxW="1500px"
-      px={{ base: '20px', md: 'initial' }}
+      px={{ base: '1.25rem', md: 'initial' }}
       mx="auto"
+      sx={{
+        '& &': {
+          with: 'initial',
+          padding: 'initial'
+        }
+      }}
       {...props}
     >
       {children}

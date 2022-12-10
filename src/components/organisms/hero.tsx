@@ -11,7 +11,7 @@ type Props = WithChildren & {
 
 function Hero({ children, heroImage }: Props) {
   return (
-    <Box width="100%" height={biResponsiveMd('12rem', '20rem')} position="relative">
+    <Box width="100%" height={biResponsiveMd('15rem', '30rem')} position="relative">
       <Image
         src={heroImage.src}
         alt={heroImage.alt}
@@ -21,7 +21,7 @@ function Hero({ children, heroImage }: Props) {
         }}
       />
       <Overlay />
-      <Box position="absolute" bottom="2rem" width="100%">
+      <Box position="absolute" bottom="0" transform="translateY(-50%)" width="100%">
         <ContentContainer color="text">
           {children}
         </ContentContainer>
