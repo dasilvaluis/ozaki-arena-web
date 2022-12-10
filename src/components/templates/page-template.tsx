@@ -2,7 +2,7 @@ import { Heading, Text } from '@chakra-ui/react';
 import Head from 'components/organisms/head';
 import Hero from 'components/organisms/hero';
 import MainContainer from 'src/components/atoms/main-container';
-import type { ImageMeta, WithChildren } from 'src/types';
+import type { ImageMeta, WithChildren } from 'types';
 
 type Props = WithChildren & {
   title: string;

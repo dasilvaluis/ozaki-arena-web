@@ -2,9 +2,10 @@ import { Box, useBreakpointValue } from '@chakra-ui/react';
 import ContentContainer from 'components/atoms/content-container';
 import Overlay from 'components/atoms/overlay';
 import FadeSlider from 'components/molecules/fade-slider';
+import { biResponsiveMd } from 'helpers/responsive';
 import homeSlider from 'settings/home-slider.json';
 import headerConstants from 'src/constants/header';
-import { WithChildren } from 'src/types';
+import { WithChildren } from 'types';
 
 const { headerHeight: headerHeightResponsiveMap } = headerConstants;
 
@@ -21,7 +22,12 @@ function Slider({ children }: WithChildren) {
         transitionDuration={0.7}
       />
       <Overlay />
-      <Box position="absolute" bottom="0" transform="translateY(-50%)" width="100%">
+      <Box
+        width="100%"
+        position="absolute"
+        bottom="0"
+        transform={biResponsiveMd('translateY(-25%)', 'translateY(-50%)')}
+      >
         <ContentContainer color="text">
           {children}
         </ContentContainer>

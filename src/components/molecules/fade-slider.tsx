@@ -3,7 +3,7 @@ import {
 } from '@chakra-ui/react';
 import useRange from 'hooks/useRange';
 import Image from 'next/image';
-import type { ImageMeta } from 'src/types';
+import type { ImageMeta } from 'types';
 
 type Props = Omit<BoxProps, 'transitionDuration'> & {
   interval: number;

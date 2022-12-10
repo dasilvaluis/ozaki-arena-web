@@ -1,6 +1,6 @@
 import { Text } from '@chakra-ui/react';
 import PageTemplate from 'components/templates/page-template';
-import { ImageMeta } from 'src/types';
+import { ImageMeta } from 'types';
 
 type Props = {
   heroImage: ImageMeta;

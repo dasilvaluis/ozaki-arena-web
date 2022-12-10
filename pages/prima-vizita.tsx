@@ -1,11 +1,14 @@
 import { Stack } from '@chakra-ui/react';
 import PageTemplate from 'components/templates/page-template';
 import { FirstTime, Intro, Rules } from 'components/views/first-visit';
-import { ImageMeta } from 'src/types';
+import { biResponsiveMd } from 'helpers/responsive';
+import { ImageMeta } from 'types';
 
 type Props = {
   heroImage: ImageMeta;
 }
+
+const sectionsGap = biResponsiveMd('3rem', '5rem');
 
 export default function Contact({ heroImage }: Props) {
   return (
@@ -14,7 +17,7 @@ export default function Contact({ heroImage }: Props) {
       subTitle="Cățărat este pentru toată lumea"
       heroImage={heroImage}
     >
-      <Stack my="6rem" gap="6rem" direction="column">
+      <Stack my={sectionsGap} gap={sectionsGap} direction="column">
         <Intro />
         <FirstTime />
         <Rules />

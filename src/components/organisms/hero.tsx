@@ -3,7 +3,7 @@ import ContentContainer from 'components/atoms/content-container';
 import Overlay from 'components/atoms/overlay';
 import Image from 'next/image';
 import { biResponsiveMd } from 'src/helpers/responsive';
-import type { ImageMeta, WithChildren } from 'src/types';
+import type { ImageMeta, WithChildren } from 'types';
 
 type Props = WithChildren & {
   heroImage: ImageMeta

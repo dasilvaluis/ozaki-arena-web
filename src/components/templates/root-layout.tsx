@@ -1,5 +1,5 @@
 import { Box, Flex } from '@chakra-ui/react';
-import { WithChildren } from 'src/types';
+import { WithChildren } from 'types';
 import Footer from '../organisms/footer/footer';
 import Header from '../organisms/navbar/header';
 

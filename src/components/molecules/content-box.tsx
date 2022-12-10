@@ -1,7 +1,7 @@
 import {
   Box, BoxProps
 } from '@chakra-ui/react';
-import { WithChildren } from 'src/types';
+import { WithChildren } from 'types';
 
 type Props = WithChildren & Required<Pick<BoxProps, 'bgColor'>>
 

@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react';
 import Image from 'next/image';
 import { biResponsiveMd } from 'src/helpers/responsive';
-import { WithChildren } from 'src/types';
+import { WithChildren } from 'types';
 
 type Props = Pick<IconProps, 'color'> & WithChildren & {
   as: ComponentWithAs<'svg', IconProps>;

@@ -1,5 +1,5 @@
 import {
-  Flex, Grid, GridItem, ListItem, Text, UnorderedList
+  Flex, Grid, GridItem, Heading, ListItem, Text, UnorderedList
 } from '@chakra-ui/react';
 import ContentBox from 'components/molecules/content-box';
 import Image from 'next/image';
@@ -8,6 +8,7 @@ import { biResponsiveLg } from 'src/helpers/responsive';
 export default function Intro() {
   return (
     <section>
+      <Heading as="h3" size="xl" color="secondary" pl="2rem" mb="2rem">Interesat de cățărat?</Heading>
       <Flex gap="2rem" direction={biResponsiveLg('column', 'row')}>
         <Grid
           fontSize="1.25rem"
@@ -38,7 +39,7 @@ export default function Intro() {
               </Text>
 
               <Text>
-                Cu alpinism, oamenii caută să:
+                Cu cățărat, oamenii caută să:
               </Text>
 
               <UnorderedList>
@@ -52,7 +53,7 @@ export default function Intro() {
           <GridItem gridArea="t2">
             <ContentBox bgColor="primary">
               <Text>
-                Siguranța este întotdeauna o prioritate în alpinism.
+                Siguranța este întotdeauna o prioritate în cățărat.
                 Cu echipamentul potrivit, un mediu sigur și instrucțiuni de specialitate,
                 vă puteți bucura de activitate fără să vă faceți griji cu privire la răni.
               </Text>
@@ -69,13 +70,13 @@ export default function Intro() {
           <GridItem gridArea="t3">
             <ContentBox bgColor="secondary">
               <Text>
-                Cu alpinism poți construi puterea fizică și încrederea mentală,
+                Cu cățărat poți construi puterea fizică și încrederea mentală,
                 deoarece fiecare urcare reușită, poți construi echilibru și
                 încredere pe măsură ce te provoci.
               </Text>
               <Text>
                 Pe langa asta, este un spatiu in care intalnesti alti oameni si lucrezi
-                impreuna pentru a &quot;rezolva&quot; provocarile de alpinism.
+                impreuna pentru a &quot;rezolva&quot; provocarile de cățărat.
               </Text>
             </ContentBox>
           </GridItem>

@@ -3,14 +3,14 @@ import {
 } from '@chakra-ui/react';
 import ContentBox from 'components/molecules/content-box';
 import Image from 'next/image';
-import { biResponsiveMd } from 'src/helpers/responsive';
+import { biResponsiveLg } from 'src/helpers/responsive';
 
 export default function FirstTime() {
   return (
     <section>
       <Heading as="h3" size="xl" color="primary" mb="2rem">Prima dată la Ozaki</Heading>
-      <Flex gap="2rem" direction={biResponsiveMd('column', 'row')}>
-        <Box>
+      <Flex gap="2rem" direction={biResponsiveLg('column', 'row')}>
+        <Box flex={1}>
           <Text>
             Ești un alpinist începător în căutarea unui loc sigur și de sprijin
             pentru a învăța frânghiile? Nu căuta mai departe decât
@@ -19,7 +19,7 @@ export default function FirstTime() {
             !
           </Text>
           <Text>
-            Sala noastră de alpinism este o modalitate excelentă de a începe sportul,
+            Sala noastră de cățărat este o modalitate excelentă de a începe sportul,
             unde veți avea tot sprijinul și îndrumarea de care aveți nevoie
             pentru a debarca de la sol.
           </Text>
@@ -41,7 +41,9 @@ export default function FirstTime() {
             </Box>
           </ContentBox>
         </Box>
-        <Image width="1214" height="750" src="https://picsum.photos/seed/first-day/1214/750/" alt="Introduction Photo" />
+        <Box flex={1}>
+          <Image width="1214" height="750" src="https://picsum.photos/seed/first-day/1214/750/" alt="Introduction Photo" />
+        </Box>
       </Flex>
     </section>
   );

@@ -2,7 +2,7 @@ import {
   Box, Heading, ListItem, UnorderedList
 } from '@chakra-ui/react';
 import ContentBox from 'components/molecules/content-box';
-import { BundleMeta } from 'src/types';
+import { BundleMeta } from 'types';
 
 const makeColor = (idx: number) => (idx % 2 ? 'primary' : 'secondary');
 
@@ -13,7 +13,7 @@ type Props = {
 export default function Bundles({ bundles }: Props) {
   return (
     <section>
-      <Heading as="h2" size="lg" mb="1.5rem">Pachete speciale</Heading>
+      <Heading as="h2" size="lg" mb="1.5rem" pl="2rem" color="secondary">Pachete speciale</Heading>
       {bundles.map((bundle, index) => (
         <Box key={bundle.label} my="2rem">
           <ContentBox bgColor={makeColor(index)}>
