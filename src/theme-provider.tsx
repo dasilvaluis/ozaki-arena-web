@@ -24,7 +24,7 @@ const theme = extendTheme({
     colors: {
       primary: 'orange.500',
       secondary: 'gray.800',
-      textOverPrimary: 'gray.200',
+      secondaryContrast: 'gray.200',
       text: {
         default: 'gray.200',
         _dark: 'gray.50'

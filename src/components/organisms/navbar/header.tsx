@@ -1,4 +1,4 @@
-import { HamburgerIcon } from '@chakra-ui/icons';
+import { SmallCloseIcon, HamburgerIcon } from '@chakra-ui/icons';
 import {
   Button, chakra, Flex, Heading, Show, useDisclosure
 } from '@chakra-ui/react';
@@ -18,7 +18,7 @@ function Header() {
   const { isOpen, onClose, onToggle } = useDisclosure();
 
   return (
-    <chakra.header id="site-header" color="textOverPrimary" bgColor="secondary">
+    <chakra.header id="site-header" bgColor="secondary">
       <ContentContainer position="relative">
         <Flex height={headerHeightResponsiveMap} justifyContent="space-between" alignItems="center">
           <Link href="/">
@@ -28,9 +28,11 @@ function Header() {
             <NavDesktop menuEntries={menu.entries} />
           </Show>
           <Show below={navbarBreakpoint}>
-            <Heading as="h5" size="md" m={0}>Ozaki Arena</Heading>
-            <Button onClick={onToggle} variant="link">
-              <HamburgerIcon color="white" />
+            <Link href="/" onClick={onClose}>
+              <Heading as="h5" size="md" color="secondaryContrast" m={0}>Ozaki Arena</Heading>
+            </Link>
+            <Button padding="0.75rem" variant="link" onClick={onToggle}>
+              {isOpen ? <SmallCloseIcon color="white" /> : <HamburgerIcon color="white" />}
             </Button>
           </Show>
         </Flex>

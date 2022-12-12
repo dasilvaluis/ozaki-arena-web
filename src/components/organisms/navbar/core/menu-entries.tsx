@@ -15,7 +15,15 @@ function NavigationEntries({ menuEntries, onItemClick }: Props) {
     <>
       {menuEntries.map((item) => (
         <Link as={NextLink} href={item.path} key={item.path}>
-          <Button variant="nav" pt="0em" onClick={onItemClick}>
+          <Button
+            variant="ghost"
+            color="secondaryContrast"
+            _hover={{
+              backgroundColor: 'secondaryContrast',
+              color: 'secondary'
+            }}
+            onClick={onItemClick}
+          >
             {item.label}
           </Button>
         </Link>
