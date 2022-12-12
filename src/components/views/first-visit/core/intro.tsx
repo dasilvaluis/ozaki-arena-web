@@ -1,17 +1,17 @@
 import {
   Flex, Grid, GridItem, Heading, ListItem, Text, UnorderedList
 } from '@chakra-ui/react';
-import ContentBox from 'components/molecules/content-box';
+import TextCard from 'components/molecules/text-card';
+import textCardConstants from 'constants/text-card';
 import Image from 'next/image';
 import { biResponsiveLg } from 'src/helpers/responsive';
 
 export default function Intro() {
   return (
     <section>
-      <Heading as="h3" size="xl" color="secondary" pl="2rem" mb="2rem">Interesat de cățărat?</Heading>
+      <Heading as="h3" size="xl" color="secondary" pl={textCardConstants.padding} mb="2rem">Interesat de cățărat?</Heading>
       <Flex gap="2rem" direction={biResponsiveLg('column', 'row')}>
         <Grid
-          fontSize="1.25rem"
           gap="1.75rem"
           templateColumns="repeat(3, 1fr)"
           templateAreas={{
@@ -32,7 +32,7 @@ export default function Intro() {
           }}
         >
           <GridItem gridArea="t1">
-            <ContentBox bgColor="secondary">
+            <TextCard variant="secondary">
               <Text>
                 Alpinismul este o activitate distractivă și interesantă, sigură,
                 incluzivă și accesibilă pentru oameni de toate vârstele și abilitățile.
@@ -48,40 +48,54 @@ export default function Intro() {
                 <ListItem>Câștiga echilibru și putere</ListItem>
                 <ListItem>Construiți relații</ListItem>
               </UnorderedList>
-            </ContentBox>
+            </TextCard>
           </GridItem>
           <GridItem gridArea="t2">
-            <ContentBox bgColor="primary">
+            <TextCard variant="primary">
+              <Text>
+                Odată cu alpinismul, vei experimenta un impact pozitiv la nivel
+                {' '}
+                <b>fizic, mental, emoțional și social</b>
+                .
+              </Text>
+              <Text>
+                Pe măsură ce te provoci în fiecare sesiune, vei dezvolta echilibrul,
+                puterea, concentrarea și curajul.
+                Oferă un
+                {' '}
+                <b>sentiment de realizare</b>
+                , promovează
+                {' '}
+                <b>încrederea</b>
+                {' '}
+                în sine și
+                {' '}
+                <b>reduce stresul</b>
+                .
+              </Text>
+            </TextCard>
+          </GridItem>
+          <GridItem gridArea="t3">
+            <TextCard variant="secondary">
               <Text>
                 Siguranța este întotdeauna o prioritate în cățărat.
-                Cu echipamentul potrivit, un mediu sigur și instrucțiuni de specialitate,
-                vă puteți bucura de activitate fără să vă faceți griji cu privire la răni.
+              </Text>
+              <Text>
+                Într-un mediu sigur, echipamentul potrivit și instrucțiunile de specialitate,
+                vă puteți bucura pe deplin de această activitate fără riscuri.
               </Text>
               <Text>
                 La
                 {' '}
                 <b>Ozaki Arena</b>
                 {' '}
-                suntem capabili să oferim îndrumări cu privire la siguranță
-                și tehnică pentru a asigura o experiență grozavă.
+                suntem capabili să oferim îndrumări complete începătorilor,
+                astfel încât să ne asigurăm că aveți o experiență grozavă.
               </Text>
-            </ContentBox>
-          </GridItem>
-          <GridItem gridArea="t3">
-            <ContentBox bgColor="secondary">
-              <Text>
-                Cu cățărat poți construi puterea fizică și încrederea mentală,
-                deoarece fiecare urcare reușită, poți construi echilibru și
-                încredere pe măsură ce te provoci.
-              </Text>
-              <Text>
-                Pe langa asta, este un spatiu in care intalnesti alti oameni si lucrezi
-                impreuna pentru a &quot;rezolva&quot; provocarile de cățărat.
-              </Text>
-            </ContentBox>
+            </TextCard>
           </GridItem>
           <GridItem gridArea="t4">
-            <ContentBox bgColor="primary">
+            <TextCard variant="primary">
               <Text>
                 În sala
                 {' '}
@@ -92,9 +106,9 @@ export default function Intro() {
               </Text>
               <Text>
                 Dacă crezi că este ceva ce îți dorești în viața ta, vino și alătură-te
-                comunității Ozaki astăzi!
+                comunității noastre astăzi!
               </Text>
-            </ContentBox>
+            </TextCard>
           </GridItem>
           <GridItem gridArea="i1" position="relative" minHeight="20rem">
             <Image

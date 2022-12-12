@@ -3,7 +3,7 @@ import {
   Button, chakra, Flex, Heading, Show, useDisclosure
 } from '@chakra-ui/react';
 import ContentContainer from 'components/atoms/content-container';
-import BoxedImage from 'components/molecules/boxed-image';
+import BoxedNextImage from 'components/molecules/boxed-next-image';
 import Link from 'next/link';
 import menu from 'settings/menu.json';
 import headerConstants from 'src/constants/header';
@@ -22,7 +22,12 @@ function Header() {
       <ContentContainer position="relative">
         <Flex height={headerHeightResponsiveMap} justifyContent="space-between" alignItems="center">
           <Link href="/">
-            <BoxedImage width="3.125rem" src="/brand-logo.png" alt="Brand Logo" objectFit="contain" />
+            <BoxedNextImage
+              width="3.125rem"
+              height="3.125rem"
+              src="/brand-logo.png"
+              alt="Brand Logo"
+            />
           </Link>
           <Show above={navbarBreakpoint}>
             <NavDesktop menuEntries={menu.entries} />

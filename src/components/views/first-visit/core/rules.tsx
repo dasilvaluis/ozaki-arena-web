@@ -21,7 +21,7 @@ type Props = Pick<IconProps, 'color'> & WithChildren & {
 function RuleItem({ as, color, children }: Props) {
   return (
     <ListItem>
-      <ListIcon as={as} color={color} transform="translateY(-0.125rem)" />
+      <ListIcon as={as} color={color} />
       <span>{children}</span>
     </ListItem>
   );
