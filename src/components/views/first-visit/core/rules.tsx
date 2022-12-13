@@ -57,19 +57,19 @@ export default function Rules() {
             <RuleItem as={CheckCircleIcon} color="green.500">
               Păstrați punga de cretă cu zona desemnată
             </RuleItem>
-            <RuleItem as={WarningIcon} color="orange.500">
+            <RuleItem as={WarningIcon} color="red.500">
               Nu vă întindeți pe saltea
             </RuleItem>
-            <RuleItem as={WarningIcon} color="orange.500">
+            <RuleItem as={WarningIcon} color="red.500">
               Nu merge desculț
             </RuleItem>
-            <RuleItem as={WarningIcon} color="orange.500">
+            <RuleItem as={WarningIcon} color="red.500">
               Păstrează-ți tricoul pe tine
             </RuleItem>
-            <RuleItem as={WarningIcon} color="orange.500">
+            <RuleItem as={WarningIcon} color="red.500">
               Menține mâncarea și băutura departe de saltea
             </RuleItem>
-            <RuleItem as={WarningIcon} color="orange.500">
+            <RuleItem as={WarningIcon} color="red.500">
               Nu mergeți la toaletă cu papuci de cățărat
             </RuleItem>
           </List>

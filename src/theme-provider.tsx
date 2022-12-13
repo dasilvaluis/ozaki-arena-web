@@ -15,14 +15,16 @@ const theme = extendTheme({
       }
     }
   },
-
   fonts: {
     heading: "'Montserrat', sans-serif",
     body: "'Source Sans Pro', sans-serif"
   },
+  colors: {
+    burntOrange: '#CC5500'
+  },
   semanticTokens: {
     colors: {
-      primary: 'orange.500',
+      primary: 'burntOrange',
       secondary: 'gray.800',
       secondaryContrast: 'gray.200',
       text: {
