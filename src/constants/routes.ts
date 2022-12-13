@@ -1,12 +1,9 @@
-import menu from 'settings/menu.json';
-
-const trimSlashes = (word: string) => word.replace(/^\/|\/$/g, '');
-
-const camelize = (s: string) => s.replace(/-./g, (x) => x[1].toUpperCase());
-
-const routes: Record<string, string> = menu.entries.reduce((acc, curr) => ({
-  ...acc,
-  [camelize(trimSlashes(curr.path))]: curr.path
-}), {});
+const routes = {
+  despre: '/despre',
+  primaVizita: '/prima-vizita',
+  tarife: '/tarife',
+  contact: '/contact',
+  leaderboard: '/leaderboard'
+};
 
 export default routes;

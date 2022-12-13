@@ -1,5 +1,5 @@
 const textCardConstants = {
-  padding: '1.75rem'
+  padding: 5
 };
 
 export default textCardConstants;

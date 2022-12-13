@@ -5,8 +5,10 @@ export default function Intro() {
   return (
     <ContentContainer>
       <Container textAlign="center" my="5rem" maxWidth="xl" id="home-intro">
-        <Heading size="2xl" color="primary" mb="1rem" lineHeight="1.15em">
-          Găsește-ți punctul de rupere
+        <Heading size="xl" color="primary" mb="1rem" lineHeight="1.15em">
+          Găsește-ți
+          <br />
+          punctul de rupere
         </Heading>
         <Text as="b" fontSize="xl">
           Aceasta este sala ta de cățărat,
