@@ -1,6 +1,8 @@
-import MainContainer from 'components/atoms/main-container';
+import { Spacer } from '@chakra-ui/react';
 import Head from 'components/organisms/head';
-import { Hero, Team } from 'components/views/home';
+import {
+  FirstVisit, Hero, Intro, Team
+} from 'components/views/home';
 
 export default function Home() {
   return (
@@ -8,9 +10,10 @@ export default function Home() {
       <Head title="Home" />
       <main>
         <Hero />
-        <MainContainer as="div">
-          <Team />
-        </MainContainer>
+        <Spacer mt="4rem" />
+        <Intro />
+        <FirstVisit />
+        <Team />
       </main>
     </>
   );

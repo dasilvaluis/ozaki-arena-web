@@ -1,15 +1,16 @@
 import {
   Box, Container, Grid, Heading, Text, VStack
 } from '@chakra-ui/react';
+import ContentContainer from 'components/atoms/content-container';
 import NextImage from 'next/image';
 import team from 'settings/team.json';
 
 function Team() {
   return (
-    <section>
-      <Heading as="h3" size="xl" color="primary" mb="2rem" textAlign="center">Echipă</Heading>
+    <ContentContainer as="section" my="5rem" id="home-team">
+      <Heading as="h3" size="2xl" color="primary" mb="2rem" textAlign="center">Echipă</Heading>
       <Container maxW="4xl">
-        <Grid templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(4, 1fr)' }} gap="2rem" justifyContent="center">
+        <Grid templateColumns={{ base: 'repeat(2, 1fr)', lg: 'repeat(4, 1fr)' }} gap="2rem" justifyContent="center">
           {team.entries.map((member) => (
             <VStack key={member.photo}>
               <NextImage
@@ -29,7 +30,7 @@ function Team() {
           ))}
         </Grid>
       </Container>
-    </section>
+    </ContentContainer>
   );
 }
 
