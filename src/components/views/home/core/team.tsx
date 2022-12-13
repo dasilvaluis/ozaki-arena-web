@@ -8,7 +8,7 @@ import team from 'settings/team.json';
 function Team() {
   return (
     <ContentContainer as="section" my="5rem" id="home-team">
-      <Heading as="h3" size="2xl" color="primary" mb="2rem" textAlign="center">Echipă</Heading>
+      <Heading as="h2" size="xl" color="primary" mb="2rem" textAlign="center">Echipă</Heading>
       <Container maxW="4xl">
         <Grid templateColumns={{ base: 'repeat(2, 1fr)', lg: 'repeat(4, 1fr)' }} gap="2rem" justifyContent="center">
           {team.entries.map((member) => (
