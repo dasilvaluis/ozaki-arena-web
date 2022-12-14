@@ -11,7 +11,7 @@ type Props = WithChildren & {
 
 function Hero({ children, heroImage }: Props) {
   return (
-    <Box width="100%" height={biResponsiveMd('15rem', '30rem')} position="relative">
+    <Box width="100%" height={biResponsiveMd('15rem', '25rem')} position="relative">
       <Image
         src={heroImage.src}
         alt={heroImage.alt}

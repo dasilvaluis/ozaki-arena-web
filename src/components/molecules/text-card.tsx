@@ -28,7 +28,13 @@ function TextCard({
 
   return (
     <Card fontSize={fontSize} {...colorStyles}>
-      <CardBody>
+      <CardBody
+        sx={{
+          'p:last-child': {
+            marginBottom: 0
+          }
+        }}
+      >
         {children}
       </CardBody>
     </Card>

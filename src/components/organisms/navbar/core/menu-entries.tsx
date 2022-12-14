@@ -1,6 +1,4 @@
-import {
-  Button, Link
-} from '@chakra-ui/react';
+import { Button } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import { MouseEventHandler } from 'react';
 import { MenuEntry } from '../types';
@@ -14,19 +12,20 @@ function NavigationEntries({ menuEntries, onItemClick }: Props) {
   return (
     <>
       {menuEntries.map((item) => (
-        <Link as={NextLink} href={item.path} key={item.path}>
-          <Button
-            variant="ghost"
-            color="secondaryContrast"
-            _hover={{
-              backgroundColor: 'secondaryContrast',
-              color: 'secondary'
-            }}
-            onClick={onItemClick}
-          >
-            {item.label}
-          </Button>
-        </Link>
+        <Button
+          key={item.path}
+          as={NextLink}
+          href={item.path}
+          variant="ghost"
+          color="secondaryContrast"
+          _hover={{
+            backgroundColor: 'secondaryContrast',
+            color: 'secondary'
+          }}
+          onClick={onItemClick}
+        >
+          {item.label}
+        </Button>
       ))}
     </>
   );

@@ -36,9 +36,7 @@ function FirstVisit() {
               Fă primul pas și află informațiile relevante pentru prima ta vizită.
             </Text>
             <Spacer mb="1.5rem" />
-            <NextLink href={routes.primaVizita}>
-              <Button colorScheme="burntOrange" rightIcon={<ChevronRightIcon />} variant="solid">afla mai multe</Button>
-            </NextLink>
+            <Button as={NextLink} href={routes.primaVizita} colorScheme="burntOrange" rightIcon={<ChevronRightIcon />} variant="solid">afla mai multe</Button>
           </Container>
         </Center>
       </Flex>

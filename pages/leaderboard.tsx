@@ -3,7 +3,7 @@ import {
   Box, Button, Center, HStack, Icon, Text
 } from '@chakra-ui/react';
 import PageTemplate from 'components/templates/page-template';
-import Link from 'next/link';
+import NextLink from 'next/link';
 import { ImageMeta } from 'types';
 
 type Props = {
@@ -23,7 +23,7 @@ export default function Leaderboard({ heroImage }: Props) {
           <Icon boxSize={6} as={TimeIcon} color="primary" />
         </HStack>
         <Box mt="1rem">
-          <Link href="/"><Button colorScheme="orange">Acasă</Button></Link>
+          <Button as={NextLink} href="/" colorScheme="burntOrange">Acasă</Button>
         </Box>
       </Center>
 
