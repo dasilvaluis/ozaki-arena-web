@@ -36,12 +36,36 @@ const theme = extendTheme({
       700: '#662B00',
       800: '#4D2000',
       900: '#331500'
+    },
+    exoticGreen: {
+      50: '#FAFAEA',
+      100: '#F2F0C5',
+      200: '#E9E79F',
+      300: '#E1DD7A',
+      400: '#D9D354',
+      500: '#D0CA2F',
+      600: '#A7A225',
+      700: '#7D791C',
+      800: '#535113',
+      900: '#2A2809'
+    },
+    yellowGreen: {
+      50: '#F5FAEB',
+      100: '#E3F1C6',
+      200: '#D1E8A1',
+      300: '#BEDF7C',
+      400: '#ACD657',
+      500: '#9ACD32',
+      600: '#7BA428',
+      700: '#5C7B1E',
+      800: '#3E5214',
+      900: '#1F290A'
     }
   },
   semanticTokens: {
     colors: {
-      primary: 'burntOrange.500',
-      secondary: 'gray.800',
+      primary: 'yellowGreen.500',
+      secondary: 'gray.900',
       secondaryContrast: 'gray.200',
       text: {
         default: 'gray.200',
