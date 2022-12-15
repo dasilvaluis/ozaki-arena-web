@@ -23,7 +23,7 @@ export default function Leaderboard({ heroImage }: Props) {
           <Icon boxSize={6} as={TimeIcon} color="primary" />
         </HStack>
         <Box mt="1rem">
-          <Button as={NextLink} href="/" colorScheme="yellowGreen">Acasă</Button>
+          <Button as={NextLink} href="/">Acasă</Button>
         </Box>
       </Center>
 
