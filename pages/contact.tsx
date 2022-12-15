@@ -1,5 +1,7 @@
-import { Text } from '@chakra-ui/react';
+import { Box, Stack } from '@chakra-ui/react';
 import PageTemplate from 'components/templates/page-template';
+import { Contacts, Map } from 'components/views/contact';
+import { biResponsiveLg } from 'helpers/responsive';
 import { ImageMeta } from 'types';
 
 type Props = {
@@ -13,7 +15,12 @@ export default function Contact({ heroImage }: Props) {
       subTitle="Gaseste-ne"
       heroImage={heroImage}
     >
-      <Text>Contact</Text>
+      <Stack direction={biResponsiveLg('column', 'row')} gap={biResponsiveLg('2rem', '5rem')}>
+        <Contacts />
+        <Box flex="1 0 auto">
+          <Map />
+        </Box>
+      </Stack>
     </PageTemplate>
   );
 }

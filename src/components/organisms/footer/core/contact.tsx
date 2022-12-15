@@ -1,6 +1,6 @@
 import { Link, VStack } from '@chakra-ui/react';
 import contact from 'settings/contact.json';
-import ExternalLink from 'src/components/molecules/external-link';
+import ExternalLink from 'components/molecules/external-link';
 
 function Contact() {
   return (
@@ -14,11 +14,11 @@ function Contact() {
         <div>
           Email:
           {' '}
-          <Link href={`mailto:${contact.email}`} color="brand.secondary">{contact.email}</Link>
+          <Link href={`mailto:${contact.email}`}>{contact.email}</Link>
           <br />
           Tel:
           {' '}
-          <Link href={`tel:${contact.phone}`} color="brand.secondary">{contact.phone}</Link>
+          <Link href={`tel:${contact.phone}`}>{contact.phone}</Link>
         </div>
         <div>
           {contact.social.entries.map(({ label, url }) => (
