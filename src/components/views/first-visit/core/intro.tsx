@@ -34,33 +34,33 @@ export default function Intro() {
           <GridItem gridArea="t1">
             <TextCard variant="secondary">
               <Text>
-                Alpinismul este o activitate distractivă și interesantă, sigură,
+                Cățăratul este o activitate distractivă și interesantă, sigură,
                 incluzivă și accesibilă pentru oameni de toate vârstele și abilitățile.
               </Text>
 
               <Text>
-                Cu cățărat, oamenii caută să:
+                Prin cățărat, oamenii caută să:
               </Text>
 
               <UnorderedList>
-                <ListItem>Îmbunătățirea sănătății fizice și psihice</ListItem>
-                <ListItem>Sporește încrederea</ListItem>
-                <ListItem>Câștiga echilibru și putere</ListItem>
-                <ListItem>Construiți relații</ListItem>
+                <ListItem>Își imbunătățească sănătatea fizica și psihică</ListItem>
+                <ListItem>Își sporească încrederea</ListItem>
+                <ListItem>Câștige echilibru și putere</ListItem>
+                <ListItem>Construiască relații</ListItem>
               </UnorderedList>
             </TextCard>
           </GridItem>
           <GridItem gridArea="t2">
             <TextCard variant="primary">
               <Text>
-                Odată cu alpinismul, vei experimenta un impact pozitiv la nivel
+                Odată cu cățărarea, vei experimenta un impact pozitiv la nivel
                 {' '}
                 <b>fizic, mental, emoțional și social</b>
                 .
               </Text>
               <Text>
-                Pe măsură ce te provoci în fiecare sesiune, vei dezvolta echilibrul,
-                puterea, concentrarea și curajul.
+                Pe măsură ce te provoci în fiecare sesiune,
+                îți vei dezvolta echilibrul, puterea, concentrarea și curajul.
                 Oferă un
                 {' '}
                 <b>sentiment de realizare</b>
