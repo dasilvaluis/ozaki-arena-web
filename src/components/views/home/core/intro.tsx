@@ -7,9 +7,7 @@ export default function Intro() {
     <ContentContainer>
       <Container textAlign="center" my={biResponsiveXl('5rem', '10rem')} maxWidth={biResponsiveXl('xl', '2xl')} id="home-intro">
         <Heading size={biResponsiveXl('xl', '2xl')} color="primary" mb="1rem" lineHeight={{ xl: '1.25' }}>
-          Găsește-ți
-          <br />
-          punctul de rupere
+          Depășește-ți Limitele
         </Heading>
         <Text as="b" fontSize={biResponsiveXl('xl', '2xl')}>
           Aceasta este sala ta de cățărat,
