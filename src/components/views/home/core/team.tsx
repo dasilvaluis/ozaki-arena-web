@@ -14,7 +14,7 @@ function Team() {
           Echipă
         </Heading>
         <Text as="b" fontSize="xl">
-          Alpinism cu încredere
+          Cațără-te cu încredere
           <br />
           Personalul nostru profesionist este aici pentru tine
         </Text>
