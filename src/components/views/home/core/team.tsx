@@ -1,5 +1,5 @@
 import {
-  Box, Center, Container, Grid, Heading, Text, VStack
+  Box, Center, Container, Flex, Heading, Text, VStack
 } from '@chakra-ui/react';
 import ContentContainer from 'components/atoms/content-container';
 import { biResponsiveLg } from 'helpers/responsive';
@@ -20,11 +20,11 @@ function Team() {
         </Text>
       </Container>
       <Center maxW="2000px">
-        <Grid
-          display="inline-grid"
+        <Flex
+          display="inline-flex"
           justifyContent="center"
-          templateColumns={biResponsiveLg('repeat(2, 1fr)', 'repeat(4, 1fr)')}
           gap={biResponsiveLg('1rem', '2rem')}
+          flexWrap="wrap"
         >
           {team.entries.map((member) => (
             <VStack key={member.photo}>
@@ -43,7 +43,7 @@ function Team() {
               </Box>
             </VStack>
           ))}
-        </Grid>
+        </Flex>
       </Center>
     </ContentContainer>
   );

@@ -14,7 +14,7 @@ export default function Contact({ heroImage }: Props) {
   return (
     <PageTemplate
       title="Prima Vizita"
-      subTitle="Cățărat este pentru toată lumea"
+      subTitle="Cățărarea este pentru toată lumea"
       heroImage={heroImage}
     >
       <Stack my={sectionsGap} gap={sectionsGap} direction="column">

@@ -1,16 +1,15 @@
-import { chakra } from '@chakra-ui/react';
+import { chakra, Container } from '@chakra-ui/react';
 import { ComponentProps } from 'react';
 
 type Props = ComponentProps<typeof chakra.div>;
 
 function ContentContainer({ children, ...props }: Props) {
   return (
-    <chakra.div
+    <Container
       width={{
-        base: '100%', md: '90%', lg: '80%'
+        base: '100%', md: '90%'
       }}
-      maxW="1500px"
-      px={{ base: '1.25rem', md: 'initial' }}
+      maxW="1200px"
       mx="auto"
       sx={{
         '& &': {
@@ -21,7 +20,7 @@ function ContentContainer({ children, ...props }: Props) {
       {...props}
     >
       {children}
-    </chakra.div>
+    </Container>
   );
 }
 

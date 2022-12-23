@@ -9,7 +9,7 @@ import { biResponsiveLg } from 'src/helpers/responsive';
 export default function Intro() {
   return (
     <section>
-      <Heading as="h3" size="xl" color="secondary" pl={textCardConstants.padding} mb="2rem">Interesat de cățărat?</Heading>
+      <Heading as="h3" size="xl" color="secondary" pl={textCardConstants.padding} mb="2rem">Ești interesat de cățărat?</Heading>
       <Flex gap="2rem" direction={biResponsiveLg('column', 'row')}>
         <Grid
           gap="1.75rem"
@@ -34,8 +34,8 @@ export default function Intro() {
           <GridItem gridArea="t1">
             <TextCard variant="secondary">
               <Text>
-                Cățăratul este o activitate distractivă și interesantă, sigură,
-                incluzivă și accesibilă pentru oameni de toate vârstele și abilitățile.
+                Cățărarea este o activitate distractivă și interesantă, sigură,
+                incluzivă și accesibilă pentru persoane de toate vârstele și abilitățile.
               </Text>
 
               <Text>
@@ -81,8 +81,9 @@ export default function Intro() {
                 Siguranța este întotdeauna o prioritate în cățărat.
               </Text>
               <Text>
-                Într-un mediu sigur, echipamentul potrivit și instrucțiunile de specialitate,
-                vă puteți bucura pe deplin de această activitate fără riscuri.
+                Într-un mediu sigur, folosind echipamentul potrivit și
+                primind instrucțiuni de specialitate,
+                vă puteți bucura pe deplin de această activitate.
               </Text>
               <Text>
                 La

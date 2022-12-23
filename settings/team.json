@@ -1,28 +1,22 @@
 {
   "entries": [
     {
-      "name": "Adi",
+      "name": "Adrian Nistor",
       "role": "Co-Founder",
       "description": "",
-      "photo": "https://picsum.photos/seed/photo-adi/608/809"
+      "photo": "https://picsum.photos/seed/photo-adi-n/608/809"
     },
     {
-      "name": "Alex",
+      "name": "Alex Presecan",
       "role": "Co-Founder",
       "description": "",
       "photo": "https://picsum.photos/seed/photo-alex-m/608/809"
     },
     {
-      "name": "Alex",
+      "name": "Alex MacRea",
       "role": "Co-Founder",
       "description": "",
       "photo": "https://picsum.photos/seed/photo-alex-p/608/809"
-    },
-    {
-      "name": "Claudia",
-      "role": "Co-Founder",
-      "description": "",
-      "photo": "https://picsum.photos/seed/photo-claudia/608/809"
     }
   ]
 }
