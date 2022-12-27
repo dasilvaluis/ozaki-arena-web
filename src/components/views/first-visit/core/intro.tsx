@@ -13,21 +13,24 @@ export default function Intro() {
       <Flex gap="2rem" direction={biResponsiveLg('column', 'row')}>
         <Grid
           gap="1.75rem"
-          templateColumns="repeat(3, 1fr)"
+          templateColumns={{
+            base: 'repeat(1, 1fr)',
+            md: 'repeat(2, 1fr)'
+          }}
           templateAreas={{
             base: `
-              't1 t1 t1'
-              't2 t2 t2'
-              'i1 i1 i1'
-              't3 t3 t3'
-              't4 t4 t4'
-              'i2 i2 i2'
+              't1'
+              't2'
+              'i1'
+              't3'
+              't4'
+              'i2'
             `,
             md: `
-              't1 t1 i1'
-              't2 t2 i1'
-              'i2 t3 t3'
-              'i2 t4 t4'
+              't1 i1'
+              't2 i1'
+              'i2 t3'
+              'i2 t4'
             `
           }}
         >

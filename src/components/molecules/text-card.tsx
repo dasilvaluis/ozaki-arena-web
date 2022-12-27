@@ -14,7 +14,7 @@ function TextCard({
 }: Props) {
   const colorStyles = variant ? {
     primary: {
-      color: 'white',
+      color: 'secondary',
       bgColor: 'primary'
     },
     secondary: {
